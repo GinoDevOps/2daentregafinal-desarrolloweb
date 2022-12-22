@@ -1,0 +1,195 @@
+.footer_part{
+    background-color: $color_azul;
+    //padding: 130px 0px 25px;
+    padding: 25px;    
+    @media #{$small_mobile}{
+        //padding: 70px 0px 25px;
+        padding: 25px;
+    }
+    @media #{$large_mobile}{
+        //padding: 70px 0px 25px;
+        padding: 25px;        
+    }
+    @media #{$tab_device}{
+        //padding: 70px 0px 25px;
+        padding: 25px;        
+    }
+    @media #{$medium_device}{
+    
+    }
+    .footer_logo{
+        border-bottom: 1px solid $color_blanco;
+        margin-bottom: 35px;
+        padding-bottom: 22px;
+    }
+    .single_footer_part{
+        @media #{$small_mobile}{
+            margin-bottom: 20px;
+        }
+        @media #{$large_mobile}{
+            margin-bottom: 20px;
+        }
+        @media #{$tab_device}{
+            margin-bottom: 20px;
+        }
+        @media #{$medium_device}{
+        
+        }
+        h4{
+            font-size: 20px;
+            color: $color_borde_footer;
+            margin-bottom: 30px;
+            font-weight: 600;
+            @media #{$small_mobile}{
+                margin-bottom: 15px;
+            }
+            @media #{$large_mobile}{
+                margin-bottom: 15px;
+            }
+            @media #{$tab_device}{
+                margin-bottom: 15px;
+            }
+            @media #{$medium_device}{
+            
+            }
+        }
+        p{
+            color: $font_1;
+            line-height: 1.929;   
+            margin-bottom: 10px;  
+        }
+        a{
+            img{
+                margin-top: 20px;
+            }
+        }
+        .list-unstyled{
+            li{
+                a{
+                    color: $font_1;
+                    margin-bottom: 10px;
+                    display: inline-block;
+                    &:hover{
+                        color: $color_naranja !important;
+                    }
+                }
+            }
+        }
+        .social_icon{
+            float: left;
+            margin-top: 38px;
+            width: 100%;            
+            @media #{$tab}{
+                margin-top: 15px;
+                width: 100%;
+            }
+            @media #{$medium_device}{
+            
+            }
+            li{
+                a{
+                    
+                    margin-left: 0;
+                    margin-right: 25px;
+                }
+            }
+           
+        }
+        .mail_part{
+            position: relative;
+            input{
+                padding: 8px 22px;
+                font-size: 13px;
+                border-radius: 50px;
+                border: 2px solid $white_color;
+                margin-top: 20px;
+                width: 100%;
+            }
+            .email_icon{
+                position: absolute;
+                right: 0px;
+                top: 20px;
+                width: 60px;
+                height: 39px;
+                background-color: $color_naranja;
+                text-align: center;
+                color: $color_blanco;
+                border-radius: 50px;
+                line-height: 10px;
+                border: 2px solid $color_naranja;
+            }
+        }
+
+        @each $red, $color in $iconos_redes {
+            .bi-#{$red} {
+                font-size: 26px;
+                padding: 0 10px;
+                color: $color_blanco !important;
+            }
+        }
+        
+    }
+    hr{
+        background-color: $color_blanco;
+        margin-top: 50px;
+        margin-bottom: 25px;    
+    }
+    .footer_icon{
+        text-align: center;
+        li{
+            display: inline-block;
+            a{
+                font-size: 14px;
+                color: $white_color;
+                margin-left: 30px;
+                @media #{$small_mobile}{
+                    margin-left: 0px;
+                    margin-right: 25px;
+                }
+                @media #{$large_mobile}{
+                    margin-left: 0px;
+                    margin-right: 25px;
+                }
+                @media #{$tab_device}{
+                
+                }
+                @media #{$medium_device}{
+                
+                }
+                @include transform_time(.5s);
+                :hover{
+                    color: $color_naranja !important;
+                }
+            }
+        }
+        @media #{$small_mobile}{
+            float: left;
+            margin-top: 15px;
+        }
+        @media #{$large_mobile}{
+        
+        }
+        @media #{$tab_device}{
+        
+        }
+        @media #{$medium_device}{
+        
+        }
+    }
+    .copyright_text{
+        p{
+            color: $color_blanco;
+        }
+        span{
+            color: $btn_bg;
+            font-size: 12px;
+        }
+    }
+    .copyright_text p a{
+        color: $btn_bg;
+        @include transform_time(.5s);
+        &:hover{
+            color: $color_naranja;
+        }
+    }
+}

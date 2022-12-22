@@ -1,0 +1,86 @@
+.btn_1 {
+    margin: 5px;
+    color: $color_blanco !important;
+    background-color: $color_azul !important;
+    padding: 5px 20px !important;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 5px;
+    border-color: transparent;
+}
+
+.blog_part {
+    .blog_part_tittle {
+            h2 {
+                font-size: 24px;
+                font-weight: 700;
+                position: relative;
+                z-index: 1;
+                margin-top: 30px;
+                padding-left: 206px;
+                text-transform: capitalize;
+                line-height: 24px;
+                @media #{$tab} {
+                    padding-left: 130px;
+                    margin-bottom: 30;
+                }
+      
+                @media #{$medium_device} {
+      
+                }
+                &:after {
+                    position: absolute;
+                    content: "";
+                    left: 0;
+                    top: 12px;
+                    width: 180px;
+                    height: 1px;
+                    background-color: $btn_bg;
+      
+                    @media #{$tab} {
+                        width: 110px;
+                    }
+      
+                    @media #{$medium_device} {
+      
+                    }
+                }
+      
+                span {
+                    color: $btn_bg;
+                }
+            }
+    }
+}
+
+
+@media #{$tab_device} {
+    .blog_right_sidebar .instagram_feeds .instagram_row li {
+        width: 15% !important;
+    }
+.blog_part {
+    img {
+        width: 100%;
+    }
+}
+    
+}
+
+@media #{$large_mobile} {
+    .blog_right_sidebar .instagram_feeds .instagram_row li {
+        width: 24% !important;
+    }
+
+    .blog_part {
+        img {
+            width: 100%;
+        }
+    }  
+}
+
+@media #{$small_mobile} {
+    .blog_right_sidebar .instagram_feeds .instagram_row li {
+        width: 24% !important;
+    }
+}
+

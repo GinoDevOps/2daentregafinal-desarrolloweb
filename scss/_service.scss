@@ -1,0 +1,455 @@
+* {
+   box-sizing: border-box;
+}
+
+.service_part {   
+   .section_tittle {
+      h2 {
+          font-size: 24px;
+          font-weight: 700;
+          position: relative;
+          z-index: 1;
+          margin-bottom: 30px;
+          padding-left: 206px;
+          text-transform: capitalize;
+          line-height: 24px;
+          @media #{$tab} {
+              padding-left: 130px;
+              margin-bottom: 0;
+          }
+
+          @media #{$medium_device} {
+
+          }
+          &:after {
+              position: absolute;
+              content: "";
+              left: 0;
+              top: 12px;
+              width: 180px;
+              height: 1px;
+              background-color: $btn_bg;
+
+              @media #{$tab} {
+                  width: 110px;
+              }
+
+              @media #{$medium_device} {
+
+              }
+          }
+
+          span {
+              color: $btn_bg;
+          }
+      }
+  }
+   .mt_60{
+      margin-top: 60px;
+   }
+   .service_text{
+      @media #{$tab}{
+      margin-top: 25px;
+      }
+      @media #{$medium_device}{
+      
+      }
+      h2{
+         font-size: 36px;
+         margin-bottom: 34px;
+         font-weight: 700;
+         line-height: 51px;
+         span{
+            color: $btn_bg;
+         }
+         @media #{$tab}{
+            font-size: 25px;
+            margin-bottom: 15px;
+            line-height: 35px;
+         }
+         @media #{$medium_device}{
+            font-size: 40px;
+            margin-bottom: 15px;
+         }
+         span{
+            font-weight: 400;
+
+         }
+      }
+      p{
+         margin-bottom: 15px;
+         line-height: 1.8;
+      }
+      .btn_1{
+         margin-top: 45px;
+         @media #{$tab}{
+            margin-top: 10px;
+         }
+         @media #{$medium_device}{
+         
+         }
+      }
+   }
+   
+   
+   .single_service_text{
+      padding: 35px;
+      margin-top: 30px;
+      background-color: #f4f4f4;
+      position: relative;
+      @media #{$tab}{
+         margin-top: 15px;
+      }
+      @media #{$medium_device}{
+         margin-top: 15px;
+      }
+      img{
+         position: absolute;
+         display: block;
+      }
+      h4{
+         font-size: 24px;
+         font-weight: 700;
+         padding-left: 87px;
+         text-transform: capitalize;
+         @media #{$tab}{
+            
+         }
+         @media #{$medium_device}{
+            
+         }
+      }
+      p{
+         padding-top: 20px;
+         line-height: 2;
+         @media #{$tab}{
+            padding-top: 30px;
+         }
+         @media #{$medium_device}{
+            
+         }
+      }
+   }
+   .service_part_iner{
+      .col-lg-6{
+         &:first-child{
+            margin-top: 60px;
+            @media #{$tab}{
+               margin-top: 0;
+            }
+            @media #{$medium_device}{
+               
+            }
+         }
+         &:last-child{
+            margin-top: -60px;
+            @media #{$tab}{
+               margin-top: 0;
+            }
+            @media #{$medium_device}{
+               
+            }
+         }
+      }
+   }
+}
+
+@media #{$tab}{
+   .mt_30{
+      margin-top: 30px;
+   }
+}
+@media #{$medium_device}{
+
+}
+
+.single_page_service{
+   padding: 180px 0 116px;
+   @media #{$tab}{
+      padding: 70px 0 50px ;
+   }
+   @media #{$medium_device}{
+      padding: 75px 0 50px;
+   }
+   .btn_1{
+      background-color: $btn_bg;
+      color: $white_color;
+      &:hover{
+         color: $btn_hover;
+      }
+   }
+}
+
+.grid_container {
+   display: grid;
+   text-align: center;
+}
+
+.galeria {
+   padding-bottom: 3em;
+   padding-top: 1em;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-auto-rows: 160px;
+   gap: 0.9em;
+   text-shadow: 2px 2px 2px black;   
+}
+
+/* IMAGEN1  */
+.galeria_imagenes1 {
+   position: relative;
+   cursor: pointer;
+   overflow: hidden;
+}
+
+.galeria_imagenes1::before {
+   content: "Camioneta de 17 plazas con cajuela.";
+   text-align: center;
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background-color: $color_transparente;
+   transform: scaleY(0);
+   transition: transform .4s;
+   color: $color_blanco;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 1.5rem;
+}
+
+.galeria_imagenes1:hover::before {
+   transform: scaleY(1);
+}
+
+/* IMAGEN2  */
+.galeria_imagenes2 {
+   position: relative;
+   cursor: pointer;
+   overflow: hidden;
+}
+
+.galeria_imagenes2::before {
+   content: "Camioneta de pasajeros sin ventanas. 17 plazas.";
+   text-align: center;   
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background-color: $color_transparente;
+   transform: scaleY(0);
+   transition: transform .4s;
+   color: $color_blanco;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 1.5rem;
+}
+
+.galeria_imagenes2:hover::before {
+   transform: scaleY(1);
+}
+
+/* IMAGEN3  */
+.galeria_imagenes3 {
+   position: relative;
+   cursor: pointer;
+   overflow: hidden;
+}
+
+.galeria_imagenes3::before {
+   content: "Camioneta sin ventanas, transporte de mercancía.";
+   text-align: center;      
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background-color: $color_transparente;
+   transform: scaleY(0);
+   transition: transform .4s;
+   color: $color_blanco;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 1.5rem;
+}
+
+.galeria_imagenes3:hover::before {
+   transform: scaleY(1);
+}
+
+/* IMAGEN4  */
+.galeria_imagenes4 {
+   position: relative;
+   cursor: pointer;
+   overflow: hidden;
+}
+
+.galeria_imagenes4::before {
+   content: "Autobús gran turismo con 40 plazas.";
+   text-align: center;      
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background-color: $color_transparente;
+   transform: scaleY(0);
+   transition: transform .4s;
+   color: $color_blanco;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 1.5rem;
+}
+
+.galeria_imagenes4:hover::before {
+   transform: scaleY(1);
+}
+
+
+/* IMAGEN5  */
+.galeria_imagenes5 {
+   position: relative;
+   cursor: pointer;
+   overflow: hidden;
+}
+.galeria_imagenes5::before {
+   content: "Autobús económico con 44 plazas.";
+   text-align: center;
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background-color: $color_transparente;
+   transform: scaleY(0);
+   transition: transform .4s;
+   color: $color_blanco;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 1.5rem;
+}
+.galeria_imagenes5:hover::before {
+   transform: scaleY(1);
+}
+
+/* IMAGEN6  */
+.galeria_imagenes6 {
+   position: relative;
+   cursor: pointer;
+   overflow: hidden;
+}
+.galeria_imagenes6::before {
+   content: "Autobús escolar, 44 plazas.";
+   text-align: center;
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background-color: $color_transparente;
+   transform: scaleY(0);
+   transition: transform .4s;
+   color: $color_blanco;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 1.5rem;
+}
+.galeria_imagenes6:hover::before {
+   transform: scaleY(1);
+}
+
+/* IMAGEN7  */
+.galeria_imagenes7 {
+   position: relative;
+   cursor: pointer;
+   overflow: hidden;
+}
+.galeria_imagenes7::before {
+   content: "Autobús con baño y de 40 plazas.";
+   text-align: center;
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background-color: $color_transparente;
+   transform: scaleY(0);
+   transition: transform .4s;
+   color: $color_blanco;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 1.5rem;
+}
+.galeria_imagenes7:hover::before {
+   transform: scaleY(1);
+}
+
+/* IMAGEN8  */
+.galeria_imagenes8 {
+   position: relative;
+   cursor: pointer;
+   overflow: hidden;
+}
+.galeria_imagenes8::before {
+   content: "Autobús económico de 44 plazas y con baño.";
+   text-align: center;
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background-color: $color_transparente;
+   transform: scaleY(0);
+   transition: transform .4s;
+   color: $color_blanco;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 1.5rem;
+}
+.galeria_imagenes8:hover::before {
+   transform: scaleY(1);
+}
+
+/* IMAGEN9  */
+.galeria_imagenes9 {
+   position: relative;
+   cursor: pointer;
+   overflow: hidden;
+}
+.galeria_imagenes9::before {
+   content: "Camioneta de 26 plazas.";
+   text-align: center;
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background-color: $color_transparente;
+   transform: scaleY(0);
+   transition: transform .4s;
+   color: $color_blanco;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 1.5rem;
+}
+.galeria_imagenes9:hover::before {
+   transform: scaleY(1);
+}
+
+.galeria_img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+

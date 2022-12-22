@@ -1,0 +1,61 @@
+.container_c {
+	width: 90%;
+	max-width: 1200px;
+	margin: 100px auto;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.container_c::after {
+	content: "";
+	width: 2px;
+	height: 100%;
+	background: #1b3231;
+	position: absolute;
+	top: 0;
+	left: calc(50% - 1px);
+	z-index: 1;
+}
+
+.evento {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 200px;
+	position: relative;
+}
+
+.evento::after {
+	content: "";
+	display: block;
+	width: 14px;
+	height: 14px;
+	border-radius: 100px;
+	background: #DCDFD9;
+	border: 2px solid #1b3231;
+	position: absolute;
+	z-index: 2;
+	top: calc(50% - 9px);
+	left: calc(50% - 9px);
+}
+
+.cliente {
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	width: calc(42% + 20px);
+	font-size: 32px;
+	font-weight: normal;
+}
+
+.foto {
+	width: 42%;
+	border: 10px solid #fff;
+	position: relative;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.foto img {
+	width: 100%;
+	vertical-align: top;
+}
