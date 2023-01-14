@@ -1,0 +1,14 @@
+Para añadir Keywords que ayudaran al SEO del sitio de cerati, añadi palabras como
+
+"Soda Stereo"
+"Cerati"
+"La ciudad de la fueria"
+"bocanada"
+"Siempre es hoy"
+
+
+y sobre todo referencias a canciones de sus discos mas conocidos para que sea mas simple el indexing.
+
+Gracias totales!
+
+Gino Luciano Rojo, para el curso de Desarrollo Web - Coderhouse
